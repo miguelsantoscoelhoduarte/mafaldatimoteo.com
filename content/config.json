@@ -1,14 +1,14 @@
 {
-  "title": "Blog by John Doe",
+  "title": "Portfolio by Mafalda Timóteo",
   "url": "https://lumen.alxshelepenok.com",
-  "description": "Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.",
+  "description": "Junior Data Analyst with a Biomedical Engineering background, transitioning into Health and Business Analytics.",
   "copyright": "© All rights reserved.",
   "googleAnalyticsId": "G-MSQGQG14PK",
   "pathPrefix": "/",
   "feedLimit": 4,
   "menu": [
     {
-      "title": "Articles",
+      "title": "Projects",
       "url": "/"
     },
     {
@@ -21,17 +21,25 @@
     }
   ],
   "author": {
-    "title": "John Doe",
-    "photo": "/logo.png",
-    "description": "Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.",
+    "title": "Mafalda Timóteo",
+    "photo": "/profile.jpeg",
+    "description": "Junior Data Analyst with a Biomedical Engineering background, transitioning into Health and Business Analytics.",
     "contacts": [
       {
         "name": "github",
-        "contact": "alxshelepenok"
+        "contact": ""
       },
       {
         "name": "linkedin",
-        "contact": "alxshelepenok"
+        "contact": "mafalda-timoteo"
+      },
+      {
+        "name": "email",
+        "contact": "mafaldat14@hotmail.com"
+      },
+      {
+        "name": "cv",
+        "contact": ""
       }
     ]
   }

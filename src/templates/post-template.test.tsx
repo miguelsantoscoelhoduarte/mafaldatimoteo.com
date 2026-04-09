@@ -40,8 +40,8 @@ describe("PostTemplate", () => {
     const { container } = renderWithCoilProvider(<GatsbyHead {...props} />);
 
     expect(getMeta(container, "twitter:card")).toEqual("summary_large_image");
-    expect(getMeta(container, "twitter:title")).toEqual("Humane Typography in the Digital Age - Blog by John Doe");
-    expect(getMeta(container, "og:title")).toEqual("Humane Typography in the Digital Age - Blog by John Doe");
+    expect(getMeta(container, "twitter:title")).toEqual("Humane Typography in the Digital Age - Blog by Mafalda Timóteo");
+    expect(getMeta(container, "og:title")).toEqual("Humane Typography in the Digital Age - Blog by Mafalda Timóteo");
     expect(getMeta(container, "description")).toEqual("Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.");
     expect(getMeta(container, "twitter:description")).toEqual("Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.");
     expect(getMeta(container, "og:description")).toEqual("Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.");

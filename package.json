@@ -20,6 +20,7 @@
     "release": "semantic-release",
     "clean": "rimraf .cache public",
     "build": "bun run clean && gatsby build",
+    "dev": "npx nodemon --watch content/config.json --watch gatsby-config.ts --ext json,ts --exec 'dot_clean -m . && npx gatsby develop'",
     "start": "bun run clean && gatsby develop",
     "version": "bun ./internal/scripts/up-version.mjs"
   },
@@ -70,6 +71,7 @@
     "@types/sass": "^1.45.0",
     "autoprefixer": "^10.4.21",
     "conventional-changelog-conventionalcommits": "9.1.0",
+    "nodemon": "^3.1.14",
     "postcss": "^8.4.49",
     "postcss-scss": "^4.0.9",
     "react-test-renderer": "^18.3.1",

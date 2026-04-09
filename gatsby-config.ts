@@ -23,6 +23,13 @@ export default {
       },
     },
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "static",
+        path: path.resolve("static"),
+      },
+    },
+    {
       resolve: "gatsby-plugin-feed",
       options: {
         query: `

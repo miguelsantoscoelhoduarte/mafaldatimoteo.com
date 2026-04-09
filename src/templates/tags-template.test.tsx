@@ -31,8 +31,8 @@ describe("TagsTemplate", () => {
     const { container } = renderWithCoilProvider(<GatsbyHead />);
 
     expect(getMeta(container, "twitter:card")).toEqual("summary_large_image");
-    expect(getMeta(container, "twitter:title")).toEqual("Tags - Blog by John Doe");
-    expect(getMeta(container, "og:title")).toEqual("Tags - Blog by John Doe");
+    expect(getMeta(container, "twitter:title")).toEqual("Tags - Blog by Mafalda Timóteo");
+    expect(getMeta(container, "og:title")).toEqual("Tags - Blog by Mafalda Timóteo");
     expect(getMeta(container, "description")).toEqual("Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.");
     expect(getMeta(container, "twitter:description")).toEqual("Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.");
     expect(getMeta(container, "og:description")).toEqual("Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.");

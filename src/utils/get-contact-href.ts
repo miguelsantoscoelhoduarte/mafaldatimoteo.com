@@ -1,5 +1,6 @@
 const getContactHref = (name: string, contact: string) => {
   const hrefs: { [key: string]: string } = {
+    cv: "/cv.pdf",
     mastodon: `${contact}`,
     email: btoa(contact) || "",
     line: `line://ti/p/${contact}`,

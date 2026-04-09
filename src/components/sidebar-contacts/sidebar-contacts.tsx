@@ -31,6 +31,16 @@ const SidebarContacts: FC<SidebarContactsProps> = ({ contacts }) => {
                   >
                     <Icon name={name} icon={getIcon(name)} />
                   </span>
+                ) : name === "cv" ? (
+                  <a
+                    target="_blank"
+                    className={styles.link}
+                    href={getContactHref(name, contact)}
+                    rel="noopener noreferrer"
+                    download
+                  >
+                    <Icon name={name} icon={getIcon(name)} />
+                  </a>
                 ) : (
                   <a
                     target="_blank"
