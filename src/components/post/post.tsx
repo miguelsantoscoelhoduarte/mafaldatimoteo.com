@@ -11,7 +11,7 @@ import { ThemeSwitcher } from "@/components/theme-switcher";
 import * as styles from "./post.module.scss";
 
 interface PostProps {
-  post: Node;
+  post: Node; 
 }
 
 const Post: FC<PostProps> = ({ post }) => {
