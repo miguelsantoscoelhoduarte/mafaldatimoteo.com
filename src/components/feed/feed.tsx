@@ -45,11 +45,21 @@ const Feed: FC<FeedProps> = ({ edges }) => (
         <p className={styles.description}>
           {edge.node.frontmatter.description}
         </p>
+        {edge.node.frontmatter.tags &&
+          edge.node.frontmatter.tags.length > 0 && (
+            <ul className={styles.tools}>
+              {edge.node.frontmatter.tags.map((tool) => (
+                <li className={styles.tool} key={tool}>
+                  {tool}
+                </li>
+              ))}
+            </ul>
+          )}
         <Link
           className={styles.more}
           to={edge.node.frontmatter?.slug || edge.node.fields.slug}
         >
-          Read
+          {edge.node.frontmatter.buttonLabel || "Read"}
         </Link>
       </div>
     ))}

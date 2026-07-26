@@ -2,7 +2,7 @@
 title: "Exploring the Depths of Innovation"
 date: "2016-09-01T23:46:37.121Z"
 template: "post"
-draft: false
+draft: true
 slug: "/posts/exploring-depths-of-innovation"
 category: "Creative Process"
 tags:

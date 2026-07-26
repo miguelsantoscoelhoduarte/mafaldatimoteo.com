@@ -1,7 +1,7 @@
 {
   "title": "Portfolio by Mafalda Timóteo",
-  "url": "https://lumen.alxshelepenok.com",
-  "description": "Junior Data Analyst with a Biomedical Engineering background, transitioning into Health and Business Analytics.",
+  "url": "https://mafaldatimoteo.com",
+  "description": "Junior Data Analyst with a Biomedical Engineering background. I transform complex data into clear insights that support better decisions in healthcare and business. With experience in Python, SQL, statistical analysis and data visualisation, I enjoy exploring data, identifying meaningful patterns and communicating findings in a clear and practical way.",
   "copyright": "© All rights reserved.",
   "googleAnalyticsId": "G-MSQGQG14PK",
   "pathPrefix": "/",
@@ -16,6 +16,10 @@
       "url": "/pages/about"
     },
     {
+      "title": "Beyond Data",
+      "url": "/pages/beyond-data"
+    },
+    {
       "title": "Contact me",
       "url": "/pages/contacts"
     }
@@ -23,7 +27,7 @@
   "author": {
     "title": "Mafalda Timóteo",
     "photo": "/profile.jpeg",
-    "description": "Junior Data Analyst with a Biomedical Engineering background, transitioning into Health and Business Analytics.",
+    "description": "Junior Data Analyst with a Biomedical Engineering background. I transform complex data into clear insights that support better decisions in healthcare and business. With experience in Python, SQL, statistical analysis and data visualisation, I enjoy exploring data, identifying meaningful patterns and communicating findings in a clear and practical way.",
     "contacts": [
       {
         "name": "github",

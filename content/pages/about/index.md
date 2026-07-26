@@ -4,32 +4,77 @@ template: "page"
 socialImage: "./image.jpg"
 ---
 
-I'm a Junior Data Analyst with a background in Biomedical Engineering, currently completing my degree at Instituto Superior Técnico in Lisbon. I'm transitioning into Health and Business Analytics — driven by a genuine curiosity for what data can reveal and a commitment to making that knowledge useful to others.
+Hi, I'm Mafalda.
 
-My approach is calm and structured. I take ownership of my work and care about communicating findings clearly, whether I'm talking to engineers or to people with no technical background.
+I recently completed my degree in Biomedical Engineering at Instituto Superior Técnico and the Data Analyst Internship Program at Mayerfeld Consulting. I am currently pursuing a Postgraduate Programme in Artificial Intelligence and Machine Learning at IADE.
+
+My academic background taught me how to approach complex problems with analytical thinking, scientific rigour and attention to detail. Over time, I became increasingly interested in the value that data can bring to both healthcare and business decision-making.
+
+Through academic, personal and internship projects, I have gained practical experience in data cleaning, exploratory data analysis, statistical testing, SQL databases and interactive dashboard development.
+
+I am now working towards beginning my professional career in data analytics, where I hope to continue developing my technical skills while contributing to meaningful, data-driven projects.
 
 ## Skills
 
-**Python** — data manipulation, analysis and visualisation using pandas, matplotlib, seaborn, NumPy and pingouin.
+**Data Analysis** — Python, pandas, NumPy, data cleaning, exploratory data analysis and statistical hypothesis testing.
 
-**SQL** — querying relational databases (PostgreSQL), including extraction, filtering, aggregation and joins.
+**Databases** — SQL, PostgreSQL and SQL Server, including data extraction, filtering, aggregation, joins and relational database design.
 
-**Power BI** — building dashboards and visual reports focused on data exploration and insight.
+**Data Visualisation** — Tableau, Matplotlib and Seaborn, with a focus on interactive dashboards, data storytelling and communicating actionable insights.
 
-**Excel** — data preparation, visualisation and analysis.
+**Additional Tools** — Foundational experience with Excel and Power BI for data preparation, analysis and visual reporting.
+
+**Currently Developing** — Machine learning, artificial intelligence and predictive modelling through my postgraduate programme.
+
+**Professional Skills** — Analytical thinking, problem-solving, communication, leadership, organisation, adaptability and attention to detail.
 
 ## Experience
 
-Beyond the technical side, I've built a varied set of real-world skills. Since 2022 I've worked as an Accounting Assistant, handling document management, invoices and expense records — which sharpened my attention to detail and discretion with sensitive information.
+### Data Analyst Internship Program
 
-Since 2021 I've been a certified Volleyball Coach (Degree 1) at Cascais Volley4all Academy, coaching multiple age groups, planning training sessions and competing in national and international events. It's taught me a lot about leadership, decision-making under pressure and getting the best out of people.
+*Mayerfeld Consulting | 2026*
 
-Earlier in my degree I volunteered as an online tutor through IST's BiomExplica project, helping secondary school students build confidence in challenging subjects. I also spent a year on the Events Team of the IEEE-IST Student Branch, where I helped organise workshops and networking events, managed budgets and ran social media.
+Completed a hands-on programme focused on solving business problems through data analysis.
 
-## Featured Project
+* Analysed customer, transaction, session and campaign data using Python.
+* Cleaned, transformed and validated datasets before analysis.
+* Used statistical methods to test business hypotheses and evaluate relationships between variables.
+* Created interactive Tableau dashboards to communicate performance trends and key insights.
+* Translated analytical results into clear conclusions and practical business recommendations.
+* Strengthened my ability to present technical findings to both technical and non-technical audiences.
 
-**Gamified Health Questionnaire** *(Final Degree Project)* — Designed and built a gamified web-based health questionnaire to improve user engagement and the reliability of healthcare data. The project involved a full Python data pipeline for ingestion, validation and cleaning of real-time responses, a SQL Server database schema optimised for integrity and performance, and automated System Usability Scale (SUS) metrics for quantitative UX feedback.
+### Accounting Assistant
+
+*Gabinete Contabilidade do Cotão | 2022 – Present*
+
+Support daily accounting and administrative operations by organising invoices, managing expense records and handling confidential financial information. This experience has strengthened my attention to detail, organisation, reliability and ability to work accurately with high volumes of information.
+
+### Volleyball Coach
+
+*Cascais Volley4All | 2021 – Present*
+
+Coach athletes across different age groups, managing training plans, competition logistics and individual development. This role has strengthened my leadership, communication, decision-making and ability to remain calm and structured in demanding situations.
+
+## Education
+
+### Postgraduate Programme in Artificial Intelligence and Machine Learning
+
+*IADE | 2026 – Present*
+
+Currently developing knowledge in artificial intelligence, machine learning, predictive modelling and data-driven problem-solving.
+
+### Degree in Biomedical Engineering
+
+*Instituto Superior Técnico | 2019 – 2026*
+
+Developed a multidisciplinary foundation combining engineering, healthcare, mathematics, programming and scientific analysis. My studies strengthened my analytical thinking and introduced me to the use of technology and data to solve complex healthcare problems.
 
 ## Certifications
 
 **Microsoft Azure AI-900** — AI Fundamentals, covering AI, Generative AI and Microsoft Foundry.
+
+## Beyond Data
+
+Outside of data, volleyball has shaped much of who I am. As an athlete and coach, it has taught me leadership, resilience and the value of trusting the process — qualities I bring to every project.
+
+<a class="button" href="/pages/beyond-data/">Read more</a>

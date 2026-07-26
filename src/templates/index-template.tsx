@@ -61,6 +61,8 @@ export const query = graphql`
             title
             date
             slug
+            tags
+            buttonLabel
           }
         }
       }

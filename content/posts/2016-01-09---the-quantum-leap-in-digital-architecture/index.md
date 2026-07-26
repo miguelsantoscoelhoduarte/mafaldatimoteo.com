@@ -2,7 +2,7 @@
 title: "The Quantum Leap in Digital Architecture"
 date: "2016-09-01T23:46:37.121Z"
 template: "post"
-draft: false
+draft: true
 slug: "/posts/quantum-leap-digital-architecture"
 category: "Technology Trends"
 tags:
