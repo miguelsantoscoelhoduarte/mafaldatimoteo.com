@@ -1,9 +1,11 @@
 name: Deploy
 
+# Primary hosting is Vercel (auto-deploys on push to master).
+# GitHub Pages is a redundant backup served from the `gh-pages` branch.
+# This Actions-based deploy is kept for manual use only — enable the
+# `push` trigger and set Pages source back to "GitHub Actions" if you
+# ever want CI to publish Pages (requires GitHub Actions to be unlocked).
 on:
-  push:
-    branches:
-      - master
   workflow_dispatch:
 
 permissions:
