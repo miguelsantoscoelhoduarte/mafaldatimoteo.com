@@ -3,6 +3,7 @@ import React, { type FC } from "react";
 import { graphql } from "gatsby";
 
 import { Feed } from "@/components/feed";
+import { Hero } from "@/components/hero";
 import { Meta } from "@/components/meta";
 import { Page } from "@/components/page";
 import { Layout } from "@/components/layout";
@@ -21,21 +22,33 @@ interface IndexTemplateProps {
 
 const IndexTemplate: FC<IndexTemplateProps> = ({ data, pageContext }) => {
   const { pagination } = pageContext;
-  const { hasNextPage, hasPrevPage, prevPagePath, nextPagePath } = pagination;
+  const {
+    currentPage,
+    hasNextPage,
+    hasPrevPage,
+    prevPagePath,
+    nextPagePath,
+  } = pagination;
 
   const { edges } = data.allMarkdownRemark;
 
   return (
     <Layout>
-      <Sidebar isHome />
+      <Sidebar />
       <Page>
+        {currentPage === 0 && <Hero />}
+        <h2 className="eyebrow" id="projects">
+          Selected projects
+        </h2>
         <Feed edges={edges} />
-        <Pagination
-          prevPagePath={prevPagePath}
-          nextPagePath={nextPagePath}
-          hasPrevPage={hasPrevPage}
-          hasNextPage={hasNextPage}
-        />
+        {(hasPrevPage || hasNextPage) && (
+          <Pagination
+            prevPagePath={prevPagePath}
+            nextPagePath={nextPagePath}
+            hasPrevPage={hasPrevPage}
+            hasNextPage={hasNextPage}
+          />
+        )}
       </Page>
     </Layout>
   );
@@ -63,6 +76,7 @@ export const query = graphql`
             slug
             tags
             buttonLabel
+            summary
           }
         }
       }

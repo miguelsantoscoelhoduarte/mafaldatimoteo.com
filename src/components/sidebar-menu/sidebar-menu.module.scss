@@ -16,8 +16,8 @@
       .link {
         border: 0;
         color: hsl(var(--color-foreground));
-        font-size: variables.$typography-base-font-size;
-        font-weight: normal;
+        font-size: variables.$typography-base-font-size - 1px;
+        font-weight: 500;
 
         &:hover,
         &:focus {
@@ -26,7 +26,7 @@
         }
 
         &.active {
-          border-bottom: 1px solid hsl(var(--color-foreground));
+          border-bottom: 2px solid hsl(var(--color-primary));
           color: hsl(var(--color-foreground));
         }
       }

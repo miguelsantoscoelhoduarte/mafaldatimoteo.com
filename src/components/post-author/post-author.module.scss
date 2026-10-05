@@ -2,17 +2,61 @@
 @use "src/assets/styles/variables";
 
 .post-author {
-  border-top: 1px solid hsl(var(--color-border));
+  background: hsl(var(--color-muted) / 0.5);
+  border: 1px solid hsl(var(--color-border));
+  border-radius: variables.$radius-card;
+  display: flex;
+  gap: 1.25rem;
   max-width: variables.$layout-post-width;
-  @include mixins.padding-top(1);
-  @include mixins.line-height(1);
-  @include mixins.margin-top(1);
+  padding: 1.5rem;
+  @include mixins.margin-top(1.5);
   @include mixins.margin-bottom(2);
 
+  .photo {
+    border-radius: 50%;
+    flex-shrink: 0;
+    height: 64px;
+    overflow: hidden;
+    width: 64px;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .name {
+    font-family: variables.$typography-display-font-family;
+    font-size: variables.$typography-base-font-size * 1.15;
+    font-weight: 600;
+  }
+
+  .role {
+    color: hsl(var(--color-primary));
+    font-size: variables.$typography-small-font-size;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
   .description {
-    .x {
-      display: block;
-      text-decoration: underline;
+    color: hsl(var(--color-muted-foreground));
+    font-size: variables.$typography-small-font-size + 1px;
+    line-height: 1.6;
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.75rem;
+
+    a {
+      color: hsl(var(--color-primary));
+      font-size: variables.$typography-small-font-size + 1px;
+      font-weight: 600;
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "title": "Portfolio by Mafalda Timóteo",
   "url": "https://mafaldatimoteo.com",
-  "description": "Junior Data Analyst with a Biomedical Engineering background. I transform complex data into clear insights that support better decisions in healthcare and business. With experience in Python, SQL, statistical analysis and data visualisation, I enjoy exploring data, identifying meaningful patterns and communicating findings in a clear and practical way.",
+  "description": "Junior Data Scientist at NTT DATA with a Biomedical Engineering background. I turn complex data into clear insights that support better decisions in healthcare and business.",
   "copyright": "© All rights reserved.",
   "googleAnalyticsId": "G-MSQGQG14PK",
   "pathPrefix": "/",
@@ -27,12 +27,8 @@
   "author": {
     "title": "Mafalda Timóteo",
     "photo": "/profile.jpeg",
-    "description": "Junior Data Analyst with a Biomedical Engineering background. I transform complex data into clear insights that support better decisions in healthcare and business. With experience in Python, SQL, statistical analysis and data visualisation, I enjoy exploring data, identifying meaningful patterns and communicating findings in a clear and practical way.",
+    "description": "Biomedical engineer turned data scientist. I turn messy data into clear decisions in healthcare and business.",
     "contacts": [
-      {
-        "name": "github",
-        "contact": ""
-      },
       {
         "name": "linkedin",
         "contact": "mafalda-timoteo"
@@ -45,6 +41,8 @@
         "name": "cv",
         "contact": ""
       }
-    ]
+    ],
+    "role": "Junior Data Scientist",
+    "company": "NTT DATA"
   }
 }

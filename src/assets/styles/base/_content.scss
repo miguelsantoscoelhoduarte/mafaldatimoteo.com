@@ -1,0 +1,191 @@
+@use "../variables";
+@use "../mixins";
+
+// Reusable blocks for markdown pages and case studies (written as raw HTML in .md files).
+
+.eyebrow {
+  font-family: variables.$typography-font-family;
+  line-height: 1.4;
+  margin: 0 0 1rem;
+  scroll-margin-top: 1.5rem;
+  color: hsl(var(--color-primary));
+  font-size: variables.$typography-xs-font-size;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.lede {
+  color: hsl(var(--color-muted-foreground));
+  font-size: variables.$typography-base-font-size * 1.15;
+  line-height: 1.6;
+}
+
+.callout {
+  background: hsl(var(--color-primary) / 0.08);
+  border: 1px solid hsl(var(--color-primary) / 0.25);
+  border-radius: variables.$radius-card;
+  margin: 1.5rem 0 2rem;
+  padding: 1.25rem 1.5rem;
+
+  p {
+    margin: 0.25rem 0 0;
+  }
+
+  strong {
+    color: hsl(var(--color-foreground));
+  }
+}
+
+.card-grid {
+  display: grid;
+  gap: 0.875rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin: 1rem 0 2rem;
+
+  .card {
+    background: hsl(var(--color-muted) / 0.6);
+    border: 1px solid hsl(var(--color-border));
+    border-radius: variables.$radius-card;
+    padding: 1rem 1.125rem;
+
+    h4 {
+      font-size: variables.$typography-base-font-size;
+      line-height: 1.4;
+      margin: 0 0 0.375rem;
+    }
+
+    p {
+      color: hsl(var(--color-muted-foreground));
+      font-size: variables.$typography-small-font-size + 1px;
+      line-height: 1.55;
+      margin: 0;
+    }
+
+    .chips {
+      margin-top: 0.625rem;
+    }
+  }
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  & li,
+  & span {
+    background: hsl(var(--color-background));
+    border: 1px solid hsl(var(--color-border));
+    border-radius: 999px;
+    color: hsl(var(--color-foreground));
+    font-size: variables.$typography-xs-font-size + 1px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0.125rem 0.625rem;
+  }
+}
+
+.timeline {
+  border-left: 2px solid hsl(var(--color-border));
+  margin: 1rem 0 2rem 0.375rem;
+  padding-left: 1.5rem;
+
+  .entry {
+    position: relative;
+    padding-bottom: 1.75rem;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    &::before {
+      background: hsl(var(--color-background));
+      border: 2px solid hsl(var(--color-muted-foreground));
+      border-radius: 50%;
+      content: "";
+      height: 10px;
+      left: calc(-1.5rem - 7px);
+      position: absolute;
+      top: 0.4rem;
+      width: 10px;
+    }
+
+    &.current::before {
+      background: hsl(var(--color-primary));
+      border-color: hsl(var(--color-primary));
+      box-shadow: 0 0 0 4px hsl(var(--color-primary) / 0.2);
+    }
+
+    h3 {
+      font-size: variables.$typography-base-font-size * 1.125;
+      line-height: 1.4;
+      margin: 0;
+    }
+
+    .where {
+      color: hsl(var(--color-muted-foreground));
+      font-size: variables.$typography-small-font-size;
+      margin: 0.125rem 0 0.5rem;
+
+      strong {
+        color: hsl(var(--color-primary));
+      }
+    }
+
+    p {
+      line-height: 1.6;
+      margin: 0.375rem 0 0;
+    }
+
+    ul {
+      margin: 0.5rem 0 0;
+      padding-left: 1.125rem;
+
+      li {
+        line-height: 1.55;
+        margin-bottom: 0.25rem;
+        padding: 0;
+      }
+    }
+  }
+}
+
+.insights {
+  counter-reset: insight;
+  display: grid;
+  gap: 0.75rem;
+  list-style: none;
+  margin: 1rem 0 2rem;
+  padding: 0;
+
+  & > li {
+    background: hsl(var(--color-muted) / 0.6);
+    border: 1px solid hsl(var(--color-border));
+    border-radius: variables.$radius-card;
+    counter-increment: insight;
+    line-height: 1.6;
+    margin: 0;
+    padding: 1rem 1.125rem 1rem 3.25rem;
+    position: relative;
+
+    &::before {
+      color: hsl(var(--color-primary));
+      content: counter(insight, decimal-leading-zero);
+      font-family: variables.$typography-display-font-family;
+      font-size: 1.125rem;
+      font-weight: 600;
+      left: 1.125rem;
+      position: absolute;
+      top: 0.9rem;
+    }
+
+    strong {
+      display: block;
+      margin-bottom: 0.125rem;
+    }
+  }
+}

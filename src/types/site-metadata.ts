@@ -4,6 +4,8 @@ type SiteMetadataAuthor = {
   title: string;
   photo: string;
   description: string;
+  role?: string;
+  company?: string;
   contacts: {
     name: keyof typeof icons;
     contact: string;

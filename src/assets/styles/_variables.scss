@@ -1,10 +1,10 @@
 @use "sass:math";
 
 $dark-color-palette: (
-  background: hsl(240, 7%, 11%),
+  background: hsl(240, 7%, 9%),
   foreground: hsl(240, 4%, 98%),
-  muted: hsl(240, 4%, 17%),
-  muted-foreground: hsl(240, 4%, 66%),
+  muted: hsl(240, 5%, 14%),
+  muted-foreground: hsl(240, 5%, 72%),
   border: hsl(240, 4%, 17%),
   primary: hsl(342, 100%, 74%),
   primary-foreground: hsl(240, 4%, 98%),
@@ -22,7 +22,7 @@ $light-color-palette: (
   background: hsl(0, 0%, 100%),
   foreground: hsl(240, 7%, 11%),
   muted: hsl(240, 6%, 96%),
-  muted-foreground: hsl(240, 6%, 46.1%),
+  muted-foreground: hsl(240, 5%, 38%),
   border: hsl(240, 2%, 89%),
   primary: hsl(342, 100%, 47%),
   primary-foreground: hsl(240, 4%, 98%),
@@ -37,11 +37,15 @@ $light-color-palette: (
 );
 
 $typography-root-font-size: 100;
-$typography-base-font-size: 16px;
+$typography-base-font-size: 17px;
 $typography-small-font-size: 14px;
+$typography-xs-font-size: 12px;
 $typography-base-line-height: 1.625;
 $typography-leading: math.round(16 * math.div($typography-root-font-size, 100) * $typography-base-line-height);
-$typography-font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+$typography-font-family: "Inter", -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+$typography-display-font-family: "Fraunces", Georgia, "Times New Roman", serif;
+
+$radius-card: 14px;
 
 $button-height: 40px;
 $button-border-radius: 20px;

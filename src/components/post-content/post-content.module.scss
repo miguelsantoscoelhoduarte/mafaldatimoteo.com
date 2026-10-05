@@ -42,6 +42,22 @@
       text-decoration: underline;
     }
 
+    h2 {
+      font-size: variables.$typography-base-font-size * 1.5;
+      line-height: 1.3;
+      margin-top: 2.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    p,
+    li {
+      line-height: 1.7;
+    }
+
+    ul li::marker {
+      color: hsl(var(--color-primary));
+    }
+
     * {
       margin-left: auto;
       margin-right: auto;
@@ -74,14 +90,12 @@
     }
 
     .body {
-      font-size: variables.$typography-base-font-size * 1.125;
-      @include mixins.line-height(1.125);
+      font-size: variables.$typography-base-font-size * 1.05;
       @include mixins.margin-bottom(1.125);
 
       p {
-        font-size: variables.$typography-base-font-size * 1.125;
-        @include mixins.line-height(1.125);
-        @include mixins.margin-bottom(1.125);
+        font-size: variables.$typography-base-font-size * 1.05;
+        @include mixins.margin-bottom(1);
       }
 
       h2 > a {

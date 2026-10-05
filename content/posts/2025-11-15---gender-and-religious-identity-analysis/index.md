@@ -11,6 +11,7 @@ tags:
   - "Statistical Analysis"
   - "Tableau"
   - "Survey Data"
+summary: "Does gender shape how much religious identity matters to 16-year-olds in Northern Ireland? Survey data, chi-square tests and Tableau visuals across survey years."
 description: "An analysis of survey data investigating whether gender is associated with the importance attributed to religious identity among 16-year-olds in Northern Ireland. The project combined data preparation, statistical hypothesis testing and Tableau visualisations to compare groups and examine how responses changed over time."
 ---
 

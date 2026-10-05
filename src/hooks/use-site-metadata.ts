@@ -11,6 +11,8 @@ const useSiteMetadata = () => {
             title
             photo
             description
+            role
+            company
             contacts {
               name
               contact

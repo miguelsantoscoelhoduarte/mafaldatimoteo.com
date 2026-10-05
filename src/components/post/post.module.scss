@@ -4,17 +4,56 @@
 .post {
   grid-column: span 12;
 
+  .header {
+    border-bottom: 1px solid hsl(var(--color-border));
+    margin: 2rem auto 2.5rem;
+    max-width: variables.$layout-post-width;
+    padding: 0 1rem 2rem;
+  }
+
+  .meta {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .category {
+    background: hsl(var(--color-primary) / 0.1);
+    border-radius: 999px;
+    color: hsl(var(--color-primary));
+    font-size: variables.$typography-xs-font-size;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    padding: 0.25rem 0.625rem;
+    text-transform: uppercase;
+  }
+
+  .time {
+    color: hsl(var(--color-muted-foreground));
+    font-size: variables.$typography-small-font-size;
+  }
+
+  .title {
+    font-size: clamp(2rem, 5vw, 2.75rem);
+    font-weight: 600;
+    line-height: 1.15;
+    margin: 0 0 1rem;
+  }
+
+  .lede {
+    color: hsl(var(--color-muted-foreground));
+    font-size: variables.$typography-base-font-size * 1.1;
+    line-height: 1.6;
+    margin: 0 0 1.25rem;
+  }
+
   .content {
     @include mixins.margin-auto();
   }
 
   .footer {
-    max-width: variables.$layout-post-width;
-    @include mixins.padding(0, 0.5);
-    @include mixins.margin-auto();
-  }
-
-  .comments {
     max-width: variables.$layout-post-width;
     @include mixins.padding(0, 0.5);
     @include mixins.margin-auto();
@@ -35,11 +74,12 @@
 
 @include mixins.breakpoint-lg {
   .post {
-    .footer {
-      @include mixins.padding-equal(0);
+    .header {
+      margin-top: 4rem;
+      padding: 0 0 2rem;
     }
 
-    .comments {
+    .footer {
       @include mixins.padding-equal(0);
     }
 
@@ -48,6 +88,7 @@
       max-width: none;
       position: fixed;
       top: 30px;
+      z-index: 2;
       @include mixins.margin(0, 0.5, 0, 0);
     }
   }

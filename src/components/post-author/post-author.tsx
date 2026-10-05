@@ -1,32 +1,32 @@
-import React, { useMemo } from "react";
+import React from "react";
 
-import { getContactHref } from "@/utils/get-contact-href";
+import { Link } from "gatsby";
+
+import { Image } from "@/components/image";
 import { useSiteMetadata } from "@/hooks/use-site-metadata";
 
 import * as styles from "./post-author.module.scss";
 
 const PostAuthor = () => {
   const { author } = useSiteMetadata();
-  const x = useMemo(
-    () => author.contacts.find(({ name }) => name === "x"),
-    [author],
-  );
 
   return (
     <div className={styles.postAuthor}>
-      <p className={styles.description}>
-        {author.description}
-        {x ? (
-          <a
-            className={styles.x}
-            href={getContactHref(x.name, x.contact)}
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <strong>{author.title}</strong> on X
-          </a>
-        ) : null}
-      </p>
+      <Image alt={author.title} path={author.photo} className={styles.photo} />
+      <div>
+        <p className={styles.name}>{author.title}</p>
+        {author.role && (
+          <p className={styles.role}>
+            {author.role}
+            {author.company && ` @ ${author.company}`}
+          </p>
+        )}
+        <p className={styles.description}>{author.description}</p>
+        <p className={styles.links}>
+          <Link to="/pages/about">More about me</Link>
+          <Link to="/pages/contacts">Get in touch</Link>
+        </p>
+      </div>
     </div>
   );
 };

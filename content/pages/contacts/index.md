@@ -4,20 +4,23 @@ template: "page"
 socialImage: "./image.jpg"
 ---
 
-## Let's Connect
+<p class="lede">I'm currently a Junior Data Scientist at NTT DATA, but I'm always happy to talk about data — especially where it meets healthcare, sport or better decision-making.</p>
 
-I am currently looking for opportunities to begin my professional career in data analytics.
+<div class="card-grid">
+  <div class="card">
+    <h4>Email</h4>
+    <p><a href="mailto:mafaldat14@hotmail.com">mafaldat14@hotmail.com</a></p>
+  </div>
+  <div class="card">
+    <h4>LinkedIn</h4>
+    <p><a href="https://www.linkedin.com/in/mafalda-timoteo" target="_blank" rel="noopener noreferrer">linkedin.com/in/mafalda-timoteo</a></p>
+  </div>
+  <div class="card">
+    <h4>CV</h4>
+    <p><a href="/cv.pdf" target="_blank" rel="noopener noreferrer">Download PDF</a></p>
+  </div>
+</div>
 
-I am particularly interested in projects where data can be used to understand behaviour, improve processes and support better decisions in business or healthcare.
+Reach out for collaborations, data side projects, volleyball analytics, or just to say hi.
 
-Feel free to contact me to discuss junior data analyst opportunities, collaborations or data-related projects.
-
-**[Contact Me](mailto:mafaldat14@hotmail.com)**
-
----
-
-**Email** — [mafaldat14@hotmail.com](mailto:mafaldat14@hotmail.com)
-
-**LinkedIn** — [linkedin.com/in/mafalda-timoteo](https://www.linkedin.com/in/mafalda-timoteo)
-
-*You can also download my CV using the button in the sidebar.*
+<a class="button" href="mailto:mafaldat14@hotmail.com">Send me an email →</a>

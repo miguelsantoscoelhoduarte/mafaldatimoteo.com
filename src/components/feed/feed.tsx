@@ -12,57 +12,49 @@ type FeedProps = {
 
 const Feed: FC<FeedProps> = ({ edges }) => (
   <div className={styles.feed}>
-    {edges.map((edge) => (
-      <div className={styles.item} key={edge.node.fields.slug}>
-        <div className={styles.meta}>
-          <time
-            className={styles.time}
-            dateTime={new Date(edge.node.frontmatter.date).toLocaleDateString(
-              "en-US",
-              { year: "numeric", month: "long", day: "numeric" },
-            )}
-          >
-            {new Date(edge.node.frontmatter.date).toLocaleDateString("en-US", {
-              year: "numeric",
-              month: "long",
-            })}
-          </time>
-          <span className={styles.divider} />
-          <span className={styles.category}>
-            <Link to={edge.node.fields.categorySlug} className={styles.link}>
-              {edge.node.frontmatter.category}
+    {edges.map((edge) => {
+      const { frontmatter, fields } = edge.node;
+      const to = frontmatter?.slug || fields.slug;
+
+      return (
+        <article className={styles.item} key={fields.slug}>
+          <div className={styles.meta}>
+            <Link to={fields.categorySlug} className={styles.category}>
+              {frontmatter.category}
             </Link>
-          </span>
-        </div>
-        <h2 className={styles.title}>
-          <Link
-            className={styles.link}
-            to={edge.node.frontmatter?.slug || edge.node.fields.slug}
-          >
-            {edge.node.frontmatter.title}
-          </Link>
-        </h2>
-        <p className={styles.description}>
-          {edge.node.frontmatter.description}
-        </p>
-        {edge.node.frontmatter.tags &&
-          edge.node.frontmatter.tags.length > 0 && (
+            <time
+              className={styles.time}
+              dateTime={new Date(frontmatter.date).toISOString()}
+            >
+              {new Date(frontmatter.date).toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "short",
+              })}
+            </time>
+          </div>
+          <h3 className={styles.title}>
+            <Link className={styles.link} to={to}>
+              {frontmatter.title}
+            </Link>
+          </h3>
+          <p className={styles.description}>
+            {frontmatter.summary || frontmatter.description}
+          </p>
+          {frontmatter.tags && frontmatter.tags.length > 0 && (
             <ul className={styles.tools}>
-              {edge.node.frontmatter.tags.map((tool) => (
+              {frontmatter.tags.map((tool) => (
                 <li className={styles.tool} key={tool}>
                   {tool}
                 </li>
               ))}
             </ul>
           )}
-        <Link
-          className={styles.more}
-          to={edge.node.frontmatter?.slug || edge.node.fields.slug}
-        >
-          {edge.node.frontmatter.buttonLabel || "Read"}
-        </Link>
-      </div>
-    ))}
+          <span className={styles.more} aria-hidden="true">
+            {frontmatter.buttonLabel || "Read"} <span className={styles.arrow}>→</span>
+          </span>
+        </article>
+      );
+    })}
   </div>
 );
 

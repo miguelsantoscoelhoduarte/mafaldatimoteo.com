@@ -51,7 +51,7 @@ exports[`IndexTemplate renders correctly 1`] = `
                       "props": {
                         "className": undefined,
                       },
-                      "type": "h1",
+                      "type": "h2",
                     },
                   ],
                   "props": {
@@ -448,6 +448,17 @@ exports[`IndexTemplate renders correctly 1`] = `
                 {
                   "$$typeof": Symbol(react.test.json),
                   "children": [
+                    "Selected projects",
+                  ],
+                  "props": {
+                    "className": "eyebrow",
+                    "id": "projects",
+                  },
+                  "type": "h2",
+                },
+                {
+                  "$$typeof": Symbol(react.test.json),
+                  "children": [
                     {
                       "$$typeof": Symbol(react.test.json),
                       "children": [
@@ -457,44 +468,27 @@ exports[`IndexTemplate renders correctly 1`] = `
                             {
                               "$$typeof": Symbol(react.test.json),
                               "children": [
-                                "September 2016",
+                                "Typography",
                               ],
                               "props": {
+                                "aria-current": undefined,
                                 "className": undefined,
-                                "dateTime": "September 1, 2016",
+                                "href": "/typography",
+                                "onClick": [Function],
+                                "onMouseEnter": [Function],
                               },
-                              "type": "time",
-                            },
-                            {
-                              "$$typeof": Symbol(react.test.json),
-                              "children": null,
-                              "props": {
-                                "className": undefined,
-                              },
-                              "type": "span",
+                              "type": "a",
                             },
                             {
                               "$$typeof": Symbol(react.test.json),
                               "children": [
-                                {
-                                  "$$typeof": Symbol(react.test.json),
-                                  "children": [
-                                    "Typography",
-                                  ],
-                                  "props": {
-                                    "aria-current": undefined,
-                                    "className": undefined,
-                                    "href": "/typography",
-                                    "onClick": [Function],
-                                    "onMouseEnter": [Function],
-                                  },
-                                  "type": "a",
-                                },
+                                "Sep 2016",
                               ],
                               "props": {
                                 "className": undefined,
+                                "dateTime": "2016-09-01T00:00:00.000Z",
                               },
-                              "type": "span",
+                              "type": "time",
                             },
                           ],
                           "props": {
@@ -523,7 +517,7 @@ exports[`IndexTemplate renders correctly 1`] = `
                           "props": {
                             "className": undefined,
                           },
-                          "type": "h2",
+                          "type": "h3",
                         },
                         {
                           "$$typeof": Symbol(react.test.json),
@@ -539,21 +533,29 @@ exports[`IndexTemplate renders correctly 1`] = `
                           "$$typeof": Symbol(react.test.json),
                           "children": [
                             "Read",
+                            " ",
+                            {
+                              "$$typeof": Symbol(react.test.json),
+                              "children": [
+                                "→",
+                              ],
+                              "props": {
+                                "className": undefined,
+                              },
+                              "type": "span",
+                            },
                           ],
                           "props": {
-                            "aria-current": undefined,
+                            "aria-hidden": "true",
                             "className": undefined,
-                            "href": "/posts/perfecting-the-art-of-perfection",
-                            "onClick": [Function],
-                            "onMouseEnter": [Function],
                           },
-                          "type": "a",
+                          "type": "span",
                         },
                       ],
                       "props": {
                         "className": undefined,
                       },
-                      "type": "div",
+                      "type": "article",
                     },
                     {
                       "$$typeof": Symbol(react.test.json),
@@ -564,44 +566,27 @@ exports[`IndexTemplate renders correctly 1`] = `
                             {
                               "$$typeof": Symbol(react.test.json),
                               "children": [
-                                "September 2016",
+                                "Design Inspiration",
                               ],
                               "props": {
+                                "aria-current": undefined,
                                 "className": undefined,
-                                "dateTime": "September 1, 2016",
+                                "href": "/design-inspiration",
+                                "onClick": [Function],
+                                "onMouseEnter": [Function],
                               },
-                              "type": "time",
-                            },
-                            {
-                              "$$typeof": Symbol(react.test.json),
-                              "children": null,
-                              "props": {
-                                "className": undefined,
-                              },
-                              "type": "span",
+                              "type": "a",
                             },
                             {
                               "$$typeof": Symbol(react.test.json),
                               "children": [
-                                {
-                                  "$$typeof": Symbol(react.test.json),
-                                  "children": [
-                                    "Design Inspiration",
-                                  ],
-                                  "props": {
-                                    "aria-current": undefined,
-                                    "className": undefined,
-                                    "href": "/design-inspiration",
-                                    "onClick": [Function],
-                                    "onMouseEnter": [Function],
-                                  },
-                                  "type": "a",
-                                },
+                                "Sep 2016",
                               ],
                               "props": {
                                 "className": undefined,
+                                "dateTime": "2016-09-01T00:00:00.000Z",
                               },
-                              "type": "span",
+                              "type": "time",
                             },
                           ],
                           "props": {
@@ -630,7 +615,7 @@ exports[`IndexTemplate renders correctly 1`] = `
                           "props": {
                             "className": undefined,
                           },
-                          "type": "h2",
+                          "type": "h3",
                         },
                         {
                           "$$typeof": Symbol(react.test.json),
@@ -646,21 +631,29 @@ exports[`IndexTemplate renders correctly 1`] = `
                           "$$typeof": Symbol(react.test.json),
                           "children": [
                             "Read",
+                            " ",
+                            {
+                              "$$typeof": Symbol(react.test.json),
+                              "children": [
+                                "→",
+                              ],
+                              "props": {
+                                "className": undefined,
+                              },
+                              "type": "span",
+                            },
                           ],
                           "props": {
-                            "aria-current": undefined,
+                            "aria-hidden": "true",
                             "className": undefined,
-                            "href": "/posts/johannes-gutenberg",
-                            "onClick": [Function],
-                            "onMouseEnter": [Function],
                           },
-                          "type": "a",
+                          "type": "span",
                         },
                       ],
                       "props": {
                         "className": undefined,
                       },
-                      "type": "div",
+                      "type": "article",
                     },
                     {
                       "$$typeof": Symbol(react.test.json),
@@ -671,44 +664,27 @@ exports[`IndexTemplate renders correctly 1`] = `
                             {
                               "$$typeof": Symbol(react.test.json),
                               "children": [
-                                "September 2017",
+                                "Typography",
                               ],
                               "props": {
+                                "aria-current": undefined,
                                 "className": undefined,
-                                "dateTime": "September 1, 2017",
+                                "href": "/typography",
+                                "onClick": [Function],
+                                "onMouseEnter": [Function],
                               },
-                              "type": "time",
-                            },
-                            {
-                              "$$typeof": Symbol(react.test.json),
-                              "children": null,
-                              "props": {
-                                "className": undefined,
-                              },
-                              "type": "span",
+                              "type": "a",
                             },
                             {
                               "$$typeof": Symbol(react.test.json),
                               "children": [
-                                {
-                                  "$$typeof": Symbol(react.test.json),
-                                  "children": [
-                                    "Typography",
-                                  ],
-                                  "props": {
-                                    "aria-current": undefined,
-                                    "className": undefined,
-                                    "href": "/typography",
-                                    "onClick": [Function],
-                                    "onMouseEnter": [Function],
-                                  },
-                                  "type": "a",
-                                },
+                                "Sep 2017",
                               ],
                               "props": {
                                 "className": undefined,
+                                "dateTime": "2017-09-01T00:00:00.000Z",
                               },
-                              "type": "span",
+                              "type": "time",
                             },
                           ],
                           "props": {
@@ -737,7 +713,7 @@ exports[`IndexTemplate renders correctly 1`] = `
                           "props": {
                             "className": undefined,
                           },
-                          "type": "h2",
+                          "type": "h3",
                         },
                         {
                           "$$typeof": Symbol(react.test.json),
@@ -751,21 +727,29 @@ exports[`IndexTemplate renders correctly 1`] = `
                           "$$typeof": Symbol(react.test.json),
                           "children": [
                             "Read",
+                            " ",
+                            {
+                              "$$typeof": Symbol(react.test.json),
+                              "children": [
+                                "→",
+                              ],
+                              "props": {
+                                "className": undefined,
+                              },
+                              "type": "span",
+                            },
                           ],
                           "props": {
-                            "aria-current": undefined,
+                            "aria-hidden": "true",
                             "className": undefined,
-                            "href": "/posts/humane-typography-in-the-digital-age",
-                            "onClick": [Function],
-                            "onMouseEnter": [Function],
                           },
-                          "type": "a",
+                          "type": "span",
                         },
                       ],
                       "props": {
                         "className": undefined,
                       },
-                      "type": "div",
+                      "type": "article",
                     },
                   ],
                   "props": {

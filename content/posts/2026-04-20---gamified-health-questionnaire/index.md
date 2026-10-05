@@ -11,6 +11,7 @@ tags:
   - "SQL Server"
   - "Data Validation"
   - "Healthcare Data"
+summary: "A gamified health questionnaire that makes data collection less boring. I built the Python validation pipeline, the SQL Server database and automated usability scoring."
 description: "A web-based healthcare questionnaire designed to make the data collection process more engaging and reliable. I developed a Python data pipeline to validate and process user responses, designed a SQL Server database and automated the calculation of System Usability Scale scores."
 ---
 

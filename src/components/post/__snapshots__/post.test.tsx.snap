@@ -10,7 +10,7 @@ exports[`Post renders correctly 1`] = `
         {
           "$$typeof": Symbol(react.test.json),
           "children": [
-            "All Articles",
+            "← All projects",
           ],
           "props": {
             "aria-current": "page",
@@ -37,13 +37,91 @@ exports[`Post renders correctly 1`] = `
             {
               "$$typeof": Symbol(react.test.json),
               "children": [
-                "Perfecting the Art of Perfection",
+                "Typography",
+              ],
+              "props": {
+                "aria-current": undefined,
+                "className": undefined,
+                "href": "/typography",
+                "onClick": [Function],
+                "onMouseEnter": [Function],
+              },
+              "type": "a",
+            },
+            {
+              "$$typeof": Symbol(react.test.json),
+              "children": [
+                "September 2016",
               ],
               "props": {
                 "className": undefined,
+                "dateTime": "2016-09-01",
               },
-              "type": "h1",
+              "type": "time",
             },
+          ],
+          "props": {
+            "className": undefined,
+          },
+          "type": "div",
+        },
+        {
+          "$$typeof": Symbol(react.test.json),
+          "children": [
+            "Perfecting the Art of Perfection",
+          ],
+          "props": {
+            "className": undefined,
+          },
+          "type": "h1",
+        },
+        {
+          "$$typeof": Symbol(react.test.json),
+          "children": [
+            "An Essay on Typography by Eric Gill takes the reader back to the year 1930. The year when a conflict between two worlds came to its term. The machines of the industrial world finally took over the handicrafts.",
+          ],
+          "props": {
+            "className": undefined,
+          },
+          "type": "p",
+        },
+        {
+          "$$typeof": Symbol(react.test.json),
+          "children": [
+            {
+              "$$typeof": Symbol(react.test.json),
+              "children": [
+                "Handwriting",
+              ],
+              "props": {},
+              "type": "li",
+            },
+            {
+              "$$typeof": Symbol(react.test.json),
+              "children": [
+                "Helvetica",
+              ],
+              "props": {},
+              "type": "li",
+            },
+          ],
+          "props": {
+            "className": "chips",
+          },
+          "type": "ul",
+        },
+      ],
+      "props": {
+        "className": undefined,
+      },
+      "type": "header",
+    },
+    {
+      "$$typeof": Symbol(react.test.json),
+      "children": [
+        {
+          "$$typeof": Symbol(react.test.json),
+          "children": [
             {
               "$$typeof": Symbol(react.test.json),
               "children": null,
@@ -76,54 +154,64 @@ exports[`Post renders correctly 1`] = `
             {
               "$$typeof": Symbol(react.test.json),
               "children": [
-                "Published",
-                " ",
-                "Sep 1, 2016",
-              ],
-              "props": {
-                "className": undefined,
-              },
-              "type": "p",
-            },
-          ],
-          "props": {
-            "className": undefined,
-          },
-          "type": "div",
-        },
-        {
-          "$$typeof": Symbol(react.test.json),
-          "children": [
-            {
-              "$$typeof": Symbol(react.test.json),
-              "children": [
-                "Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.",
+                {
+                  "$$typeof": Symbol(react.test.json),
+                  "children": [
+                    "Mafalda Timóteo",
+                  ],
+                  "props": {
+                    "className": undefined,
+                  },
+                  "type": "p",
+                },
+                {
+                  "$$typeof": Symbol(react.test.json),
+                  "children": [
+                    "Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.",
+                  ],
+                  "props": {
+                    "className": undefined,
+                  },
+                  "type": "p",
+                },
                 {
                   "$$typeof": Symbol(react.test.json),
                   "children": [
                     {
                       "$$typeof": Symbol(react.test.json),
                       "children": [
-                        "Mafalda Timóteo",
+                        "More about me",
                       ],
-                      "props": {},
-                      "type": "strong",
+                      "props": {
+                        "aria-current": undefined,
+                        "href": "/pages/about",
+                        "onClick": [Function],
+                        "onMouseEnter": [Function],
+                      },
+                      "type": "a",
                     },
-                    " on X",
+                    {
+                      "$$typeof": Symbol(react.test.json),
+                      "children": [
+                        "Get in touch",
+                      ],
+                      "props": {
+                        "aria-current": undefined,
+                        "href": "/pages/contacts",
+                        "onClick": [Function],
+                        "onMouseEnter": [Function],
+                      },
+                      "type": "a",
+                    },
                   ],
                   "props": {
                     "className": undefined,
-                    "href": "https://www.x.com/#",
-                    "rel": "noopener noreferrer",
-                    "target": "_blank",
                   },
-                  "type": "a",
+                  "type": "p",
                 },
               ],
-              "props": {
-                "className": undefined,
-              },
-              "type": "p",
+              "props": {},
+              "type": "div",
             },
           ],
           "props": {

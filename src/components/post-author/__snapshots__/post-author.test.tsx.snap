@@ -7,33 +7,64 @@ exports[`PostAuthor renders correctly 1`] = `
     {
       "$$typeof": Symbol(react.test.json),
       "children": [
-        "Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.",
+        {
+          "$$typeof": Symbol(react.test.json),
+          "children": [
+            "Mafalda Timóteo",
+          ],
+          "props": {
+            "className": undefined,
+          },
+          "type": "p",
+        },
+        {
+          "$$typeof": Symbol(react.test.json),
+          "children": [
+            "Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.",
+          ],
+          "props": {
+            "className": undefined,
+          },
+          "type": "p",
+        },
         {
           "$$typeof": Symbol(react.test.json),
           "children": [
             {
               "$$typeof": Symbol(react.test.json),
               "children": [
-                "Mafalda Timóteo",
+                "More about me",
               ],
-              "props": {},
-              "type": "strong",
+              "props": {
+                "aria-current": undefined,
+                "href": "/pages/about",
+                "onClick": [Function],
+                "onMouseEnter": [Function],
+              },
+              "type": "a",
             },
-            " on X",
+            {
+              "$$typeof": Symbol(react.test.json),
+              "children": [
+                "Get in touch",
+              ],
+              "props": {
+                "aria-current": undefined,
+                "href": "/pages/contacts",
+                "onClick": [Function],
+                "onMouseEnter": [Function],
+              },
+              "type": "a",
+            },
           ],
           "props": {
             "className": undefined,
-            "href": "https://www.x.com/#",
-            "rel": "noopener noreferrer",
-            "target": "_blank",
           },
-          "type": "a",
+          "type": "p",
         },
       ],
-      "props": {
-        "className": undefined,
-      },
-      "type": "p",
+      "props": {},
+      "type": "div",
     },
   ],
   "props": {

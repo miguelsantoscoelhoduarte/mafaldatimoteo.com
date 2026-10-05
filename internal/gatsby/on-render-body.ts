@@ -4,7 +4,33 @@ import { type RenderBodyArgs } from "gatsby";
 
 import { themeAtomKey } from "../../src/hooks/use-theme";
 
-const onRenderBody = ({ setHtmlAttributes, setPreBodyComponents }: RenderBodyArgs) => {
+const fontsHref =
+  "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap";
+
+const onRenderBody = ({
+  setHeadComponents,
+  setHtmlAttributes,
+  setPreBodyComponents,
+}: RenderBodyArgs) => {
+  setHeadComponents([
+    React.createElement("link", {
+      key: "fonts-preconnect",
+      rel: "preconnect",
+      href: "https://fonts.googleapis.com",
+    }),
+    React.createElement("link", {
+      key: "fonts-preconnect-static",
+      rel: "preconnect",
+      href: "https://fonts.gstatic.com",
+      crossOrigin: "anonymous",
+    }),
+    React.createElement("link", {
+      key: "fonts",
+      rel: "stylesheet",
+      href: fontsHref,
+    }),
+  ]);
+
   setPreBodyComponents([
     React.createElement("script", {
       key: "inline",

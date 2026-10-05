@@ -11,6 +11,7 @@ tags:
   - "pandas"
   - "Statistical Analysis"
   - "Tableau"
+summary: "What drives revenue, refunds and conversion in an online store? End-to-end analysis in Python with statistical testing, wrapped up in an interactive Tableau dashboard."
 description: "An end-to-end analysis of customer, transaction, session and campaign data from an e-commerce business. I used Python to prepare and analyse the data, perform statistical tests and identify patterns in revenue, refunds, customer behaviour and conversion, then built an interactive Tableau dashboard to communicate the most relevant business insights."
 ---
 
@@ -41,13 +42,12 @@ I then created an interactive Tableau dashboard presenting the most relevant res
 
 ## Key Insights
 
-Electronics generated the highest overall revenue. This also contributed to a high financial value of refunds within the category, although no single refund reason clearly explained the result.
-
-Converted website sessions had a higher average time on site than non-converted sessions, suggesting that stronger engagement may be associated with conversion.
-
-The relationship between pages viewed and purchase value was statistically significant but practically negligible. This highlighted the importance of evaluating the magnitude of a relationship rather than relying only on its p-value.
-
-Revenue was not strongly dependent on a very small group of customers. The ten highest-spending customers represented only a small proportion of total net revenue, indicating a relatively diversified customer base.
+<ol class="insights">
+  <li><strong>Electronics lead revenue — and refunds.</strong> The top category also carried the highest refund value, though no single refund reason explained it.</li>
+  <li><strong>Engagement goes with conversion.</strong> Converted sessions spent noticeably more time on site than non-converted ones.</li>
+  <li><strong>Significant ≠ important.</strong> Pages viewed vs. purchase value was statistically significant but practically negligible — effect size matters more than the p-value.</li>
+  <li><strong>No dangerous dependence on a few customers.</strong> The top 10 spenders were only a small share of net revenue: a healthy, diversified base.</li>
+</ol>
 
 ## Outcome
 

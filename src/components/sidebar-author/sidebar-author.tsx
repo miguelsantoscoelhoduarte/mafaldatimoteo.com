@@ -11,6 +11,8 @@ type SidebarAuthorProps = {
     title: string;
     photo: string;
     description: string;
+    role?: string;
+    company?: string;
   };
   isHome?: boolean;
 };
@@ -37,6 +39,17 @@ const SidebarAuthor: FC<SidebarAuthorProps> = ({ author, isHome }) => (
       )}
       <ThemeSwitcher />
     </div>
+    {author.role && (
+      <p className={styles.role}>
+        {author.role}
+        {author.company && (
+          <>
+            {" "}
+            @ <strong>{author.company}</strong>
+          </>
+        )}
+      </p>
+    )}
     <p className={styles.description}>{author.description}</p>
   </div>
 );
